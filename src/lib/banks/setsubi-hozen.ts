@@ -5,13 +5,15 @@ import type { BankQuestion } from "@/lib/exam-types";
  * 機械要素・潤滑・空気圧・油圧・電気・測定・図面材料・保全方式・設備診断・信頼性・安全 を網羅。
  */
 export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
-  // ===== 2級 =====  {
+  // ===== 2級 =====
+  {
     id: "setsubi-2-001",
     grade: "2",
     category: "setsubi-hozen",
     difficulty: 1,
     topic: "機械要素",
-    question: "メートルねじの「ピッチ」とは何を表すか。",
+    question:
+      "メートルねじの「ピッチ」とは何を表すか。",
     options: [
       "隣り合うねじ山どうしの軸方向の距離",
       "ねじ山1個の高さ",
@@ -28,7 +30,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 1,
     topic: "機械要素",
-    question: "一般に「ねじ」と言えばどちら向きを指すか。また左ねじはどんな向きで締まるか。",
+    question:
+      "一般に「ねじ」と言えばどちら向きを指すか。また左ねじはどんな向きで締まるか。",
     options: [
       "右ねじ＝反時計回りで締まる、左ねじ＝時計回りで締まる",
       "右ねじ＝時計回りで締まる、左ねじ＝反時計回りで締まる",
@@ -45,7 +48,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 1,
     topic: "機械要素",
-    question: "ばね座金（スプリングワッシャ）を使う主な目的はどれか。",
+    question:
+      "ばね座金（スプリングワッシャ）を使う主な目的はどれか。",
     options: [
       "ボルトの頭を大きく見せる",
       "座面の傷つきだけを防ぐ",
@@ -62,7 +66,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "機械要素",
-    question: "ボルトのゆるみ止めとして「ダブルナット」を正しく使う方法はどれか。",
+    question:
+      "ボルトのゆるみ止めとして「ダブルナット」を正しく使う方法はどれか。",
     options: [
       "ナットの間にグリースを充填して密着させる",
       "同じナットを2個、同じトルクで重ねて締めるだけでよい",
@@ -79,7 +84,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "機械要素",
-    question: "規定の締付けトルクで管理しながらボルトを締めたいときに使う工具はどれか。",
+    question:
+      "規定の締付けトルクで管理しながらボルトを締めたいときに使う工具はどれか。",
     options: [
       "トルクレンチ",
       "モンキレンチ",
@@ -96,8 +102,14 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 1,
     topic: "機械要素",
-    question: "軸と回転体（歯車・プーリなど）の間で回転トルクを伝えるために、軸と穴の双方に溝を掘って差し込む部品はどれか。",
-    options: ["割りピン", "キー", "止めねじ（イモねじ）だけ", "Oリング"],
+    question:
+      "軸と回転体（歯車・プーリなど）の間で回転トルクを伝えるために、軸と穴の双方に溝を掘って差し込む部品はどれか。",
+    options: [
+      "割りピン",
+      "キー",
+      "止めねじ（イモねじ）だけ",
+      "Oリング",
+    ],
     answer: 1,
     explanation:
       "キーは軸とハブ（穴側）の両方に設けたキー溝に挿入し、回転トルクを確実に伝える機械要素。平行キー・勾配キー・半月キーなどがある。",
@@ -108,7 +120,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 1,
     topic: "機械要素",
-    question: "ころがり軸受（ボールベアリングなど）とすべり軸受の説明として正しいものはどれか。",
+    question:
+      "ころがり軸受（ボールベアリングなど）とすべり軸受の説明として正しいものはどれか。",
     options: [
       "両者とも構造は同じで呼び名だけが違う",
       "ころがり軸受は油膜だけで支える、すべり軸受は鋼球で支える",
@@ -125,7 +138,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "機械要素",
-    question: "ころがり軸受の代表的な損傷で、転動面が疲労してうろこ状にはがれる現象を何というか。",
+    question:
+      "ころがり軸受の代表的な損傷で、転動面が疲労してうろこ状にはがれる現象を何というか。",
     options: [
       "ラビリンス",
       "なじみ運転",
@@ -142,7 +156,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "機械要素",
-    question: "歯車の「バックラッシ」とは何か。",
+    question:
+      "歯車の「バックラッシ」とは何か。",
     options: [
       "かみ合う一対の歯車の歯面間に設けられたすきま（遊び）",
       "歯車の歯の数",
@@ -159,7 +174,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "機械要素",
-    question: "Vベルト伝動で「張力（テンション）」を適正に保つことが重要な理由として正しいものはどれか。",
+    question:
+      "Vベルト伝動で「張力（テンション）」を適正に保つことが重要な理由として正しいものはどれか。",
     options: [
       "張力はベルトの色を変えるためだけに調整する",
       "張りすぎると軸受負荷増大、緩すぎるとスリップ・発熱・摩耗が起きるため",
@@ -176,7 +192,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 1,
     topic: "機械要素",
-    question: "回転軸からの潤滑油漏れを防ぐために、軸表面にリップを接触させて使うシール部品はどれか。",
+    question:
+      "回転軸からの潤滑油漏れを防ぐために、軸表面にリップを接触させて使うシール部品はどれか。",
     options: [
       "ガスケット",
       "ボールベアリング",
@@ -193,7 +210,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "機械要素",
-    question: "配管バルブの種類と用途の組み合わせで正しいものはどれか。",
+    question:
+      "配管バルブの種類と用途の組み合わせで正しいものはどれか。",
     options: [
       "仕切弁（ゲートバルブ）＝流量の微調整に最適",
       "玉形弁（グローブバルブ）＝全開・全閉専用で流量調整には不向き",
@@ -210,7 +228,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 1,
     topic: "潤滑",
-    question: "潤滑の主な作用として一般に挙げられないものはどれか。",
+    question:
+      "潤滑の主な作用として一般に挙げられないものはどれか。",
     options: [
       "金属を溶接で接合する",
       "熱を逃がす（冷却）",
@@ -227,7 +246,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "潤滑",
-    question: "潤滑油の「粘度」と温度の関係として正しいものはどれか。",
+    question:
+      "潤滑油の「粘度」と温度の関係として正しいものはどれか。",
     options: [
       "温度が上がると粘度は上がる（かたくなる）",
       "温度が上がると粘度は下がる（やわらかくなる）",
@@ -244,7 +264,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "潤滑",
-    question: "工業用潤滑油の粘度分類「ISO VG」の番号は、ある条件での動粘度（mm²/s）をほぼ表す。その条件はどれか。",
+    question:
+      "工業用潤滑油の粘度分類「ISO VG」の番号は、ある条件での動粘度（mm²/s）をほぼ表す。その条件はどれか。",
     options: [
       "0℃のときの動粘度",
       "100℃のときの動粘度",
@@ -261,7 +282,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 1,
     topic: "潤滑",
-    question: "グリースの構成要素として正しい組み合わせはどれか。",
+    question:
+      "グリースの構成要素として正しい組み合わせはどれか。",
     options: [
       "鉱油100%（添加剤や増ちょう剤は含まない）",
       "水＋砂＋顔料",
@@ -278,7 +300,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "潤滑",
-    question: "潤滑管理でいう「5適（給油の5原則）」に含まれないものはどれか。",
+    question:
+      "潤滑管理でいう「5適（給油の5原則）」に含まれないものはどれか。",
     options: [
       "適色（油の色を合わせる）",
       "適量",
@@ -295,7 +318,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "潤滑",
-    question: "潤滑油に水分が混入したとき、外観に現れる典型的な変化はどれか。",
+    question:
+      "潤滑油に水分が混入したとき、外観に現れる典型的な変化はどれか。",
     options: [
       "透明度が上がってさらさらになる",
       "白く濁る（乳化する）",
@@ -312,7 +336,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "潤滑",
-    question: "ころがり軸受へのグリース給脂が「過多」のときに起こりやすい弊害はどれか。",
+    question:
+      "ころがり軸受へのグリース給脂が「過多」のときに起こりやすい弊害はどれか。",
     options: [
       "騒音がまったく出なくなる",
       "潤滑膜が完全になくなり即座に焼き付く",
@@ -329,7 +354,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 1,
     topic: "空気圧",
-    question: "空気圧（空圧）の特徴として正しいものはどれか。",
+    question:
+      "空気圧（空圧）の特徴として正しいものはどれか。",
     options: [
       "可燃性が高く取り扱いに特別な防爆設備が必須である",
       "作動流体に圧縮性がなく、油圧より大きな力が容易に得られる",
@@ -346,7 +372,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "空気圧",
-    question: "空気圧の「3点セット（FRL）」を空気が流れる正しい順序はどれか。",
+    question:
+      "空気圧の「3点セット（FRL）」を空気が流れる正しい順序はどれか。",
     options: [
       "エアフィルタ → レギュレータ（減圧弁） → ルブリケータ（給油器）",
       "ルブリケータ → レギュレータ → エアフィルタ",
@@ -363,7 +390,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 1,
     topic: "空気圧",
-    question: "圧縮空気を冷却したとき配管内に発生し、機器の故障やさびの原因となるものはどれか。",
+    question:
+      "圧縮空気を冷却したとき配管内に発生し、機器の故障やさびの原因となるものはどれか。",
     options: [
       "オゾン",
       "ドレン（凝縮水）",
@@ -380,7 +408,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "空気圧",
-    question: "空気圧シリンダの速度を「メータアウト」で制御するとは、どの空気を絞ることか。",
+    question:
+      "空気圧シリンダの速度を「メータアウト」で制御するとは、どの空気を絞ることか。",
     options: [
       "コンプレッサの吸込み空気を絞る",
       "シリンダに供給される側の流量を絞る",
@@ -397,7 +426,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 1,
     topic: "油圧",
-    question: "「パスカルの原理」の説明として正しいものはどれか。",
+    question:
+      "「パスカルの原理」の説明として正しいものはどれか。",
     options: [
       "圧力は流体の温度だけで決まる",
       "流体は高い所から低い所へしか圧力を伝えない",
@@ -414,7 +444,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "油圧",
-    question: "断面積10cm²のピストンに油圧5MPaが作用しているとき、このピストンが押す力はおよそいくらか。（5MPa＝5N/mm²、10cm²＝1000mm²）",
+    question:
+      "断面積10cm²のピストンに油圧5MPaが作用しているとき、このピストンが押す力はおよそいくらか。（5MPa＝5N/mm²、10cm²＝1000mm²）",
     options: [
       "約5000N",
       "約500N",
@@ -431,7 +462,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 1,
     topic: "油圧",
-    question: "油圧装置の特徴として正しいものはどれか。",
+    question:
+      "油圧装置の特徴として正しいものはどれか。",
     options: [
       "圧縮性が大きく位置決め剛性が低いが、火災の心配がまったくない",
       "小型でも大きな力が得られ、無段変速や過負荷保護がしやすい一方、油漏れや油温の影響を受ける",
@@ -448,7 +480,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "油圧",
-    question: "油圧回路で「リリーフ弁」が果たす役割はどれか。",
+    question:
+      "油圧回路で「リリーフ弁」が果たす役割はどれか。",
     options: [
       "作動油をろ過してごみを取る",
       "油の流れる向きを切り換える",
@@ -465,7 +498,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "油圧",
-    question: "油圧ポンプの吸込み側に空気が混入したり圧力が下がりすぎたりして、気泡の発生と消滅で異音・浸食を起こす現象を何というか。",
+    question:
+      "油圧ポンプの吸込み側に空気が混入したり圧力が下がりすぎたりして、気泡の発生と消滅で異音・浸食を起こす現象を何というか。",
     options: [
       "クリープ",
       "サージング",
@@ -482,7 +516,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 1,
     topic: "電気",
-    question: "オームの法則 V＝IR で、100Vの電源に20Ωの抵抗をつないだとき流れる電流はいくらか。",
+    question:
+      "オームの法則 V＝IR で、100Vの電源に20Ωの抵抗をつないだとき流れる電流はいくらか。",
     options: [
       "5A",
       "0.2A",
@@ -499,7 +534,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "電気",
-    question: "ある抵抗に10Aの電流が流れ、両端の電圧が24Vであった。この抵抗で消費される電力はいくらか。（P＝VI）",
+    question:
+      "ある抵抗に10Aの電流が流れ、両端の電圧が24Vであった。この抵抗で消費される電力はいくらか。（P＝VI）",
     options: [
       "2.4W",
       "240W",
@@ -516,7 +552,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "電気",
-    question: "電動機（モータ）などの絶縁の良否を調べる「絶縁抵抗計（メガー）」は何を測定するか。",
+    question:
+      "電動機（モータ）などの絶縁の良否を調べる「絶縁抵抗計（メガー）」は何を測定するか。",
     options: [
       "電動機に流れる電流を測る",
       "電動機の回転数を測る",
@@ -533,7 +570,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "電気",
-    question: "三相誘導電動機の保護に使われる「サーマルリレー」の役割はどれか。",
+    question:
+      "三相誘導電動機の保護に使われる「サーマルリレー」の役割はどれか。",
     options: [
       "短絡（ショート）を瞬時に遮断するための唯一の保護",
       "電動機の回転方向を自動で切り換える",
@@ -550,7 +588,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "電気",
-    question: "シーケンス回路（ラダー図）の「A接点（メーク接点・NO）」の説明として正しいものはどれか。",
+    question:
+      "シーケンス回路（ラダー図）の「A接点（メーク接点・NO）」の説明として正しいものはどれか。",
     options: [
       "通常は開いており、条件が成立する（動作する）と閉じて回路をONにする",
       "通常は閉じており、条件が成立すると開いて回路をOFFにする",
@@ -567,7 +606,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "電気",
-    question: "押しボタンを離しても運転状態を保つために、リレーの自分の接点で励磁を維持する回路を何というか。",
+    question:
+      "押しボタンを離しても運転状態を保つために、リレーの自分の接点で励磁を維持する回路を何というか。",
     options: [
       "インタロック回路",
       "自己保持回路",
@@ -584,7 +624,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 1,
     topic: "電気",
-    question: "活線に近い場所で電気作業を始める前に、まず行うべき安全手順はどれか。",
+    question:
+      "活線に近い場所で電気作業を始める前に、まず行うべき安全手順はどれか。",
     options: [
       "回路の見た目だけ確認して作業を始める",
       "とりあえず手袋なしで端子に触れて熱を確かめる",
@@ -601,7 +642,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 1,
     topic: "測定",
-    question: "ノギスで一般に読み取れる最小の寸法（バーニヤの最小読取り）はおおよそどれか。",
+    question:
+      "ノギスで一般に読み取れる最小の寸法（バーニヤの最小読取り）はおおよそどれか。",
     options: [
       "1mm",
       "0.5mm",
@@ -618,7 +660,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 1,
     topic: "測定",
-    question: "マイクロメータを使う前に必ず行うべきことはどれか。",
+    question:
+      "マイクロメータを使う前に必ず行うべきことはどれか。",
     options: [
       "アンビルとスピンドルを密着させて0点（基準点）を確認・調整する",
       "本体をハンマで軽くたたいてなじませる",
@@ -635,7 +678,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "測定",
-    question: "回転軸の振れ（偏心）や工作物の心出しに使い、てこ式（テストインジケータ）もある測定器はどれか。",
+    question:
+      "回転軸の振れ（偏心）や工作物の心出しに使い、てこ式（テストインジケータ）もある測定器はどれか。",
     options: [
       "限界ゲージ（プラグゲージ）",
       "ダイヤルゲージ",
@@ -652,7 +696,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "測定",
-    question: "電線を切らずに（被覆の上から挟むだけで）電流を測定できる計器はどれか。",
+    question:
+      "電線を切らずに（被覆の上から挟むだけで）電流を測定できる計器はどれか。",
     options: [
       "回転計（タコメータ）",
       "メガー（絶縁抵抗計）",
@@ -669,7 +714,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 1,
     topic: "図面・材料",
-    question: "日本の機械製図で一般的に用いられる投影法はどれか。",
+    question:
+      "日本の機械製図で一般的に用いられる投影法はどれか。",
     options: [
       "第一角法",
       "透視投影だけ",
@@ -686,7 +732,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "図面・材料",
-    question: "材料記号「SS400」はどんな材料を表すか。",
+    question:
+      "材料記号「SS400」はどんな材料を表すか。",
     options: [
       "一般構造用圧延鋼材",
       "ステンレス鋼",
@@ -703,7 +750,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "図面・材料",
-    question: "鋼を硬く強くするために高温から急冷する熱処理はどれか。",
+    question:
+      "鋼を硬く強くするために高温から急冷する熱処理はどれか。",
     options: [
       "焼なまし（やきなまし）",
       "焼入れ（やきいれ）",
@@ -720,7 +768,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "図面・材料",
-    question: "「はめあい」で、組み立てたとき必ずすきまができる関係を何というか。",
+    question:
+      "「はめあい」で、組み立てたとき必ずすきまができる関係を何というか。",
     options: [
       "中間ばめ",
       "しまりばめ",
@@ -737,8 +786,14 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "図面・材料",
-    question: "鋼材のさびを防ぐ「防錆」の方法として一般的でないものはどれか。",
-    options: ["塗装・めっき・防錆油の塗布", "ステンレス鋼など耐食材料の使用", "乾燥した環境での保管", "わざと水をかけ続けてさび層を厚くする"],
+    question:
+      "鋼材のさびを防ぐ「防錆」の方法として一般的でないものはどれか。",
+    options: [
+      "塗装・めっき・防錆油の塗布",
+      "ステンレス鋼など耐食材料の使用",
+      "乾燥した環境での保管",
+      "わざと水をかけ続けてさび層を厚くする",
+    ],
     answer: 3,
     explanation:
       "防錆は酸素・水分の遮断（塗装・めっき・防錆油）、耐食材料の選定、湿気・塩分を避けた保管などで行う。さび層を厚くしても進行は止まらず、むしろ強度低下を招く。",
@@ -749,7 +804,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 1,
     topic: "保全方式",
-    question: "「事後保全（BM）」とはどのような保全方式か。",
+    question:
+      "「事後保全（BM）」とはどのような保全方式か。",
     options: [
       "設備が故障・停止してから修理・復旧する保全",
       "故障する前に定期的に部品交換する保全",
@@ -766,7 +822,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "保全方式",
-    question: "「予防保全（PM）」のうち、稼働時間や暦に基づいて周期的に点検・交換を行う方式を何というか。",
+    question:
+      "「予防保全（PM）」のうち、稼働時間や暦に基づいて周期的に点検・交換を行う方式を何というか。",
     options: [
       "状態基準保全（CBM）",
       "時間基準保全（TBM）",
@@ -783,7 +840,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "保全方式",
-    question: "「改良保全（CM）」の説明として正しいものはどれか。",
+    question:
+      "「改良保全（CM）」の説明として正しいものはどれか。",
     options: [
       "設備の状態を診断して整備時期を決めること",
       "故障してから素早く直すこと",
@@ -800,7 +858,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "保全方式",
-    question: "「保全予防（MP）」とはどのような考え方か。",
+    question:
+      "「保全予防（MP）」とはどのような考え方か。",
     options: [
       "点検を一切やめて事後保全に統一すること",
       "故障した設備を毎回そのまま元に戻すこと",
@@ -817,7 +876,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 1,
     topic: "保全方式",
-    question: "設備ごとに故障・修理・部品交換などの記録を残す「設備履歴（設備カルテ）」を整備する主な目的はどれか。",
+    question:
+      "設備ごとに故障・修理・部品交換などの記録を残す「設備履歴（設備カルテ）」を整備する主な目的はどれか。",
     options: [
       "故障傾向の分析や寿命予測、保全計画・改良に役立てるため",
       "書類の量を増やすため",
@@ -834,7 +894,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 1,
     topic: "設備診断",
-    question: "回転機械（モータ・ポンプ・ファンなど）の異常を早期に発見するために最もよく用いられる診断手法はどれか。",
+    question:
+      "回転機械（モータ・ポンプ・ファンなど）の異常を早期に発見するために最もよく用いられる診断手法はどれか。",
     options: [
       "色彩判定だけ",
       "振動診断",
@@ -851,7 +912,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "設備診断",
-    question: "電気接点の過熱や軸受の発熱を、設備に触れずに面的に把握できる診断手法はどれか。",
+    question:
+      "電気接点の過熱や軸受の発熱を、設備に触れずに面的に把握できる診断手法はどれか。",
     options: [
       "ノギスによる寸法測定",
       "メガーによる絶縁診断",
@@ -868,7 +930,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "設備診断",
-    question: "オペレーター（運転員）が日常点検で行う「五感点検」に含まれないものはどれか。",
+    question:
+      "オペレーター（運転員）が日常点検で行う「五感点検」に含まれないものはどれか。",
     options: [
       "油漏れ・変色を見る（視覚）",
       "異音を聞く（聴覚）",
@@ -885,7 +948,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "信頼性",
-    question: "「MTBF（平均故障間隔）」の説明として正しいものはどれか。",
+    question:
+      "「MTBF（平均故障間隔）」の説明として正しいものはどれか。",
     options: [
       "修理しながら使う設備で、故障から次の故障までの平均的な動作可能時間",
       "1回の修理にかかる平均時間",
@@ -902,7 +966,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "信頼性",
-    question: "ある設備のMTBFが190時間、MTTRが10時間のとき、可用率（アベイラビリティ）A＝MTBF／(MTBF＋MTTR) はおよそいくらか。",
+    question:
+      "ある設備のMTBFが190時間、MTTRが10時間のとき、可用率（アベイラビリティ）A＝MTBF／(MTBF＋MTTR) はおよそいくらか。",
     options: [
       "約90%",
       "約95%",
@@ -919,7 +984,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 1,
     topic: "信頼性",
-    question: "設備の故障率の時間変化を表す「バスタブ曲線」で、使い始めの不良・初期不具合が出る期間を何というか。",
+    question:
+      "設備の故障率の時間変化を表す「バスタブ曲線」で、使い始めの不良・初期不具合が出る期間を何というか。",
     options: [
       "摩耗故障期",
       "偶発故障期",
@@ -936,7 +1002,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 1,
     topic: "安全",
-    question: "設備の修理・点検中に第三者が誤って起動できないよう、電源を切ってスイッチを施錠し表示板を付ける安全管理を何というか。",
+    question:
+      "設備の修理・点検中に第三者が誤って起動できないよう、電源を切ってスイッチを施錠し表示板を付ける安全管理を何というか。",
     options: [
       "キャリブレーション",
       "オーバーホール",
@@ -953,8 +1020,14 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "機械要素",
-    question: "固定面どうし（フランジ継手など）の合わせ面に挟んで気密・液密を保つ平らな板状のシールを何というか。",
-    options: ["ガスケット", "オイルシール", "Vパッキン", "スナップリング"],
+    question:
+      "固定面どうし（フランジ継手など）の合わせ面に挟んで気密・液密を保つ平らな板状のシールを何というか。",
+    options: [
+      "ガスケット",
+      "オイルシール",
+      "Vパッキン",
+      "スナップリング",
+    ],
     answer: 0,
     explanation:
       "ガスケットは固定部の合わせ面に挟む静的シール。回転・往復運動部の動的シールにはオイルシールやパッキン、Oリングを用いる。",
@@ -965,7 +1038,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "機械要素",
-    question: "ローラチェーン伝動で「たるみ（ゆるみ側のたわみ）」を適正に保つ理由として正しいものはどれか。",
+    question:
+      "ローラチェーン伝動で「たるみ（ゆるみ側のたわみ）」を適正に保つ理由として正しいものはどれか。",
     options: [
       "たるみは大きいほど寿命が延びるため",
       "張りすぎは軸受負荷・摩耗増大、たるみ過大は歯飛び・脱落・振動を招くため",
@@ -982,7 +1056,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "潤滑",
-    question: "潤滑油の「酸化劣化」が進んだときに見られる典型的な変化はどれか。",
+    question:
+      "潤滑油の「酸化劣化」が進んだときに見られる典型的な変化はどれか。",
     options: [
       "緑色の蛍光を発し凍結する",
       "色が透明になり粘度が大きく下がる",
@@ -999,7 +1074,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "空気圧",
-    question: "空気圧回路の「電磁弁（ソレノイドバルブ）」の主な働きはどれか。",
+    question:
+      "空気圧回路の「電磁弁（ソレノイドバルブ）」の主な働きはどれか。",
     options: [
       "排気の音だけを小さくする",
       "圧縮空気を生み出す",
@@ -1016,8 +1092,14 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 1,
     topic: "電気",
-    question: "電気回路で「短絡（ショート）」など過大な電流が流れたときに溶けて回路を切り、機器を保護する部品はどれか。",
-    options: ["ヒューズ", "コンデンサ", "ダイオード", "サーミスタ"],
+    question:
+      "電気回路で「短絡（ショート）」など過大な電流が流れたときに溶けて回路を切り、機器を保護する部品はどれか。",
+    options: [
+      "ヒューズ",
+      "コンデンサ",
+      "ダイオード",
+      "サーミスタ",
+    ],
     answer: 0,
     explanation:
       "ヒューズは過電流で内部の可溶体が溶断し回路を遮断する保護部品。同様の役割を繰り返し使える形にしたのが配線用遮断器（MCCB）。漏電遮断器（ELCB）は漏れ電流を検出して遮断する。",
@@ -1028,7 +1110,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 1,
     topic: "測定",
-    question: "限界ゲージ（プラグゲージなど）で部品の合否を判定するとき、「通り側」が入って「止り側」が入らなければどう判断するか。",
+    question:
+      "限界ゲージ（プラグゲージなど）で部品の合否を判定するとき、「通り側」が入って「止り側」が入らなければどう判断するか。",
     options: [
       "必ず不合格と判断する",
       "公差内（合格）と判断する",
@@ -1045,7 +1128,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 1,
     topic: "保全方式",
-    question: "予防保全・事後保全・改良保全・保全予防などを、設備のライフサイクルコストが最も経済的になるよう組み合わせる考え方を何というか。",
+    question:
+      "予防保全・事後保全・改良保全・保全予防などを、設備のライフサイクルコストが最も経済的になるよう組み合わせる考え方を何というか。",
     options: [
       "ロットアウト",
       "全数検査",
@@ -1062,7 +1146,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 1,
     topic: "図面・材料",
-    question: "図面で「かくれ線（隠れ線）」はどんな線で描かれるか。",
+    question:
+      "図面で「かくれ線（隠れ線）」はどんな線で描かれるか。",
     options: [
       "二点鎖線",
       "太い実線",
@@ -1079,8 +1164,14 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 1,
     topic: "機械要素",
-    question: "「平歯車」「はすば歯車」「かさ歯車」「ウォームギヤ」のうち、互いに直交する2軸間で一段で大きな減速比を得やすい組み合わせはどれか。",
-    options: ["ウォームとウォームホイール", "平歯車どうし", "ラックとピニオン", "タイミングプーリどうし"],
+    question:
+      "「平歯車」「はすば歯車」「かさ歯車」「ウォームギヤ」のうち、互いに直交する2軸間で一段で大きな減速比を得やすい組み合わせはどれか。",
+    options: [
+      "ウォームとウォームホイール",
+      "平歯車どうし",
+      "ラックとピニオン",
+      "タイミングプーリどうし",
+    ],
     answer: 0,
     explanation:
       "ウォームギヤ（ウォームとウォームホイール）は直交軸で一段で大きな減速比が得られ、静粛で、条件により逆転防止（セルフロック）も可能。平歯車は平行軸用、かさ歯車は直交軸だが減速比は中程度。",
@@ -1091,7 +1182,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "電気",
-    question: "20Ωと30Ωの抵抗を直列に接続し、100Vを加えた。回路に流れる電流はいくらか。",
+    question:
+      "20Ωと30Ωの抵抗を直列に接続し、100Vを加えた。回路に流れる電流はいくらか。",
     options: [
       "5A",
       "2A",
@@ -1108,7 +1200,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "信頼性",
-    question: "信頼度0.9（90%）の同じ機器を2台直列に接続したシステム全体の信頼度はいくらか。",
+    question:
+      "信頼度0.9（90%）の同じ機器を2台直列に接続したシステム全体の信頼度はいくらか。",
     options: [
       "0.90（90%）",
       "0.99（99%）",
@@ -1125,7 +1218,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 1,
     topic: "安全",
-    question: "タンクやピット内など、酸素が不足したり有毒ガスがたまったりするおそれのある場所に入る前に必要な措置はどれか。",
+    question:
+      "タンクやピット内など、酸素が不足したり有毒ガスがたまったりするおそれのある場所に入る前に必要な措置はどれか。",
     options: [
       "周囲が明るければそのまま入ってよい",
       "とりあえずすばやく出入りすれば測定は不要",
@@ -1142,7 +1236,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "機械要素",
-    question: "二つの軸を連結する「たわみ軸継手（フレキシブルカップリング）」を使う主な利点はどれか。",
+    question:
+      "二つの軸を連結する「たわみ軸継手（フレキシブルカップリング）」を使う主な利点はどれか。",
     options: [
       "軸の多少の心ずれ（偏心・偏角）や振動・衝撃を吸収できる",
       "心出しがまったく不要になる",
@@ -1159,7 +1254,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "電気",
-    question: "三相誘導電動機を始動するときに、始動電流を抑える目的で使われる方法はどれか。",
+    question:
+      "三相誘導電動機を始動するときに、始動電流を抑える目的で使われる方法はどれか。",
     options: [
       "周波数を一時的に2倍にする",
       "スターデルタ（Y-Δ）始動",
@@ -1176,7 +1272,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "潤滑",
-    question: "強制循環給油（オイルポンプで油を回す方式）が、手差し給油や油浴給油に比べて優れている点はどれか。",
+    question:
+      "強制循環給油（オイルポンプで油を回す方式）が、手差し給油や油浴給油に比べて優れている点はどれか。",
     options: [
       "油をいっさい交換しなくてよくなる",
       "ポンプもフィルタも不要で設備が簡単になる",
@@ -1193,7 +1290,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 1,
     topic: "測定",
-    question: "工作物の平面の上に置き、気泡の位置で水平・傾きを確認する測定器はどれか。",
+    question:
+      "工作物の平面の上に置き、気泡の位置で水平・傾きを確認する測定器はどれか。",
     options: [
       "マイクロメータ",
       "ハイトゲージ",
@@ -1210,8 +1308,14 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "設備診断",
-    question: "測定したデータ（振動値・温度・摩耗粉量など）を時系列で記録し、その傾きから劣化の進行や寿命を予測する管理を何というか。",
-    options: ["傾向管理（トレンド管理）", "全数検査", "5S活動", "ロット管理"],
+    question:
+      "測定したデータ（振動値・温度・摩耗粉量など）を時系列で記録し、その傾きから劣化の進行や寿命を予測する管理を何というか。",
+    options: [
+      "傾向管理（トレンド管理）",
+      "全数検査",
+      "5S活動",
+      "ロット管理",
+    ],
     answer: 0,
     explanation:
       "傾向管理は同一条件で繰り返し測った値の時系列推移を見て、上昇傾向などから異常の兆しや余寿命を判断する手法。状態基準保全（CBM）の中核となる考え方。",
@@ -1222,7 +1326,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "油圧",
-    question: "油圧装置で、ポンプが出した圧力エネルギーを一時的にためておき、急な大流量の要求や圧力変動の吸収に使う機器はどれか。",
+    question:
+      "油圧装置で、ポンプが出した圧力エネルギーを一時的にためておき、急な大流量の要求や圧力変動の吸収に使う機器はどれか。",
     options: [
       "オイルクーラ",
       "アキュムレータ（蓄圧器）",
@@ -1239,7 +1344,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "電気",
-    question: "PLC（プログラマブルロジックコントローラ／シーケンサ）を従来のリレーシーケンス盤の代わりに使う利点はどれか。",
+    question:
+      "PLC（プログラマブルロジックコントローラ／シーケンサ）を従来のリレーシーケンス盤の代わりに使う利点はどれか。",
     options: [
       "入出力機器（センサ・ソレノイド等）も不要になる",
       "電源がいっさい不要になる",
@@ -1256,7 +1362,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 1,
     topic: "信頼性",
-    question: "「フールプルーフ」設計の考え方として正しいものはどれか。",
+    question:
+      "「フールプルーフ」設計の考え方として正しいものはどれか。",
     options: [
       "部品を定格より余裕をもって使い寿命を延ばす",
       "故障したら最も安全な側に移行するようにする",
@@ -1273,7 +1380,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "機械要素",
-    question: "Oリングを取り付ける溝（みぞ）の寸法やはめ込みが不適切なとき起こりやすい不具合はどれか。",
+    question:
+      "Oリングを取り付ける溝（みぞ）の寸法やはめ込みが不適切なとき起こりやすい不具合はどれか。",
     options: [
       "つぶし代不足や溝ふちへの噛み込み（はみ出し）で漏れや早期破損が生じる",
       "Oリングの色が変わるだけで密封性能には影響しない",
@@ -1290,7 +1398,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 1,
     topic: "電気",
-    question: "三相誘導電動機の銘板（定格銘板）に書かれている情報として、点検・保全で特に確認すべきものはどれか。",
+    question:
+      "三相誘導電動機の銘板（定格銘板）に書かれている情報として、点検・保全で特に確認すべきものはどれか。",
     options: [
       "製造工場の食堂のメニュー",
       "定格電圧・定格電流・出力・極数（または回転速度）・周波数・結線方式",
@@ -1308,7 +1417,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "信頼性",
-    question: "ある設備の総稼働可能時間が4800時間で、その間に故障が8回発生した。1回あたりの平均修復時間（MTTR）は5時間であった。この設備のMTBFはいくらか。",
+    question:
+      "ある設備の総稼働可能時間が4800時間で、その間に故障が8回発生した。1回あたりの平均修復時間（MTTR）は5時間であった。この設備のMTBFはいくらか。",
     options: [
       "40時間",
       "960時間",
@@ -1325,7 +1435,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "信頼性",
-    question: "MTBFが450時間、MTTRが50時間の設備の可用率（アベイラビリティ）A＝MTBF／(MTBF＋MTTR) はいくらか。",
+    question:
+      "MTBFが450時間、MTTRが50時間の設備の可用率（アベイラビリティ）A＝MTBF／(MTBF＋MTTR) はいくらか。",
     options: [
       "0.11（11%）",
       "0.95（95%）",
@@ -1342,8 +1453,14 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "信頼性",
-    question: "信頼度0.8（80%）の同じユニットを2台並列（冗長）に構成した。少なくとも片方が動けばよいとき、システム全体の信頼度はいくらか。",
-    options: ["0.96（96%）", "0.64（64%）", "0.80（80%）", "1.60（160%）"],
+    question:
+      "信頼度0.8（80%）の同じユニットを2台並列（冗長）に構成した。少なくとも片方が動けばよいとき、システム全体の信頼度はいくらか。",
+    options: [
+      "0.96（96%）",
+      "0.64（64%）",
+      "0.80（80%）",
+      "1.60（160%）",
+    ],
     answer: 0,
     explanation:
       "並列（冗長）システムの信頼度は1−(1−R)ⁿ。1−(1−0.8)²＝1−0.2×0.2＝1−0.04＝0.96。両方同時に故障する確率だけが全体の不信頼度になるため、信頼度が向上する。",
@@ -1354,7 +1471,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "信頼性",
-    question: "信頼度がそれぞれ0.95・0.90・0.80の3つの要素を直列に接続したシステム全体の信頼度に最も近いものはどれか。",
+    question:
+      "信頼度がそれぞれ0.95・0.90・0.80の3つの要素を直列に接続したシステム全体の信頼度に最も近いものはどれか。",
     options: [
       "約0.95",
       "約0.68",
@@ -1371,7 +1489,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "信頼性",
-    question: "バスタブ曲線の「偶発故障期」の特徴として正しいものはどれか。",
+    question:
+      "バスタブ曲線の「偶発故障期」の特徴として正しいものはどれか。",
     options: [
       "故障率が時間とともに上昇していく寿命末期の期間",
       "故障率が時間とともに低下していく初期不良の期間",
@@ -1388,7 +1507,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "設備診断",
-    question: "回転機械の精密振動診断で、回転周波数の1倍（1×）成分が卓越して大きい場合に最も疑われる異常はどれか。",
+    question:
+      "回転機械の精密振動診断で、回転周波数の1倍（1×）成分が卓越して大きい場合に最も疑われる異常はどれか。",
     options: [
       "ゆるみによるガタ（多数の高調波）",
       "転がり軸受の内輪傷",
@@ -1405,7 +1525,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "設備診断",
-    question: "カップリングで連結したポンプとモータの軸が「ミスアライメント（芯違い）」のとき、振動スペクトルに現れやすい特徴はどれか。",
+    question:
+      "カップリングで連結したポンプとモータの軸が「ミスアライメント（芯違い）」のとき、振動スペクトルに現れやすい特徴はどれか。",
     options: [
       "回転周波数の2倍（2×）成分が大きくなり、軸方向振動も増えやすい",
       "1倍成分だけが現れ高調波はまったく出ない",
@@ -1422,7 +1543,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "設備診断",
-    question: "設備診断を「簡易診断」と「精密診断」の2段階で進めるとき、その役割分担として正しいものはどれか。",
+    question:
+      "設備診断を「簡易診断」と「精密診断」の2段階で進めるとき、その役割分担として正しいものはどれか。",
     options: [
       "精密診断で異常の有無を見つけ、簡易診断で原因を特定する",
       "簡易診断で異常の有無をふるい分け（スクリーニング）、異常ありなら精密診断で原因部位・程度を特定する",
@@ -1439,7 +1561,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "設備診断",
-    question: "潤滑油診断のうち、油をろ過膜上に分離して摩耗粒子の形状・大きさ・量を顕微鏡的に観察し、摩耗の様式まで判別する手法はどれか。",
+    question:
+      "潤滑油診断のうち、油をろ過膜上に分離して摩耗粒子の形状・大きさ・量を顕微鏡的に観察し、摩耗の様式まで判別する手法はどれか。",
     options: [
       "粘度測定",
       "SOAP（発光分光分析）法",
@@ -1456,7 +1579,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "保全方式",
-    question: "「状態基準保全（CBM）」と「時間基準保全（TBM）」の違いとして正しいものはどれか。",
+    question:
+      "「状態基準保全（CBM）」と「時間基準保全（TBM）」の違いとして正しいものはどれか。",
     options: [
       "両者は同じ意味で呼び名が違うだけ",
       "CBMは故障してから直す、TBMは故障する前に直す",
@@ -1473,7 +1597,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "保全方式",
-    question: "保全方式を選定するとき、状態基準保全（CBM／予知保全）を適用するのが特に有利な設備はどれか。",
+    question:
+      "保全方式を選定するとき、状態基準保全（CBM／予知保全）を適用するのが特に有利な設備はどれか。",
     options: [
       "故障の前兆が振動・温度・音などで検出でき、突発停止の損失が大きい重要設備",
       "故障しても生産にほとんど影響せず、安価ですぐ交換できる部品",
@@ -1490,7 +1615,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "信頼性",
-    question: "ライフサイクルコスト（LCC）の考え方として正しいものはどれか。",
+    question:
+      "ライフサイクルコスト（LCC）の考え方として正しいものはどれか。",
     options: [
       "設備の購入価格のことだけを指す",
       "設備の取得費（初期投資）だけでなく、運転・保全・エネルギー・廃棄までを含めた一生分の総費用で評価する",
@@ -1507,7 +1633,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "電気",
-    question: "リレーシーケンスの「インタロック回路」を用いる目的はどれか。",
+    question:
+      "リレーシーケンスの「インタロック回路」を用いる目的はどれか。",
     options: [
       "一定時間後に出力をONにする",
       "押しボタンを離しても運転を継続させる",
@@ -1524,7 +1651,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "電気",
-    question: "ラダー図で、複数の入力接点を「直列」に並べた回路は論理的に何を表すか。",
+    question:
+      "ラダー図で、複数の入力接点を「直列」に並べた回路は論理的に何を表すか。",
     options: [
       "フリップフロップ（記憶）",
       "OR回路（いずれかの条件が成立すれば出力ON）",
@@ -1541,7 +1669,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "電気",
-    question: "「オンディレイタイマ（ON遅延タイマ）」の動作として正しいものはどれか。",
+    question:
+      "「オンディレイタイマ（ON遅延タイマ）」の動作として正しいものはどれか。",
     options: [
       "入力が入ってから設定時間が経過したのちに出力が動作する",
       "入力が入ると同時に出力が動作し、入力が切れてから設定時間後に出力が切れる",
@@ -1558,7 +1687,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "電気",
-    question: "三相誘導電動機を回転させる電源の周波数を変えて、回転速度を連続的に制御する装置はどれか。",
+    question:
+      "三相誘導電動機を回転させる電源の周波数を変えて、回転速度を連続的に制御する装置はどれか。",
     options: [
       "サーマルリレー",
       "インバータ（VVVF）",
@@ -1575,7 +1705,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "電気",
-    question: "極数4の三相誘導電動機を周波数60Hzで運転したときの同期速度はおよそいくらか。（同期速度 Ns＝120f／p [min⁻¹]）",
+    question:
+      "極数4の三相誘導電動機を周波数60Hzで運転したときの同期速度はおよそいくらか。（同期速度 Ns＝120f／p [min⁻¹]）",
     options: [
       "3600 min⁻¹",
       "1500 min⁻¹",
@@ -1592,7 +1723,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "電気",
-    question: "三相誘導電動機の「すべり」が大きくなるのはどんなときか。",
+    question:
+      "三相誘導電動機の「すべり」が大きくなるのはどんなときか。",
     options: [
       "電圧を上げて回転が同期速度を超えたとき",
       "無負荷で回転速度が同期速度にほぼ等しいとき",
@@ -1609,8 +1741,14 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "電気",
-    question: "5Ωと20Ωの抵抗を並列に接続したときの合成抵抗はいくらか。（並列：1/R＝1/R1＋1/R2）",
-    options: ["4Ω", "25Ω", "100Ω", "15Ω"],
+    question:
+      "5Ωと20Ωの抵抗を並列に接続したときの合成抵抗はいくらか。（並列：1/R＝1/R1＋1/R2）",
+    options: [
+      "4Ω",
+      "25Ω",
+      "100Ω",
+      "15Ω",
+    ],
     answer: 0,
     explanation:
       "1/R＝1/5＋1/20＝4/20＋1/20＝5/20＝1/4 なので R＝4Ω。並列合成抵抗は最も小さい抵抗値より必ず小さくなる。",
@@ -1621,7 +1759,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "電気",
-    question: "抵抗10Ωに5Aの電流が流れているとき、この抵抗で消費される電力はいくらか。（P＝I²R）",
+    question:
+      "抵抗10Ωに5Aの電流が流れているとき、この抵抗で消費される電力はいくらか。（P＝I²R）",
     options: [
       "50W",
       "250W",
@@ -1638,7 +1777,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "油圧",
-    question: "油圧シリンダの内径（ピストン径）が80mm、押す側に7MPaの圧力が作用するとき、発生する推力に最も近いものはどれか。（断面積≒π/4×80²≒5027mm²、7MPa＝7N/mm²）",
+    question:
+      "油圧シリンダの内径（ピストン径）が80mm、押す側に7MPaの圧力が作用するとき、発生する推力に最も近いものはどれか。（断面積≒π/4×80²≒5027mm²、7MPa＝7N/mm²）",
     options: [
       "約350kN",
       "約3.5kN",
@@ -1655,7 +1795,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "油圧",
-    question: "油圧回路で「シーケンス弁」が使われるのはどのような場合か。",
+    question:
+      "油圧回路で「シーケンス弁」が使われるのはどのような場合か。",
     options: [
       "油の流れる量を絞って速度を変える",
       "回路の最高圧力を制限してタンクへ逃がす",
@@ -1672,7 +1813,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "油圧",
-    question: "油圧作動油の管理項目のうち「清浄度（NAS等級など）」が悪化すると起こりやすいトラブルはどれか。",
+    question:
+      "油圧作動油の管理項目のうち「清浄度（NAS等級など）」が悪化すると起こりやすいトラブルはどれか。",
     options: [
       "制御弁のスプール固着・摩耗、ポンプ・シリンダの早期摩耗、目詰まりによる作動不良",
       "油の色が薄くなるだけで性能には影響しない",
@@ -1689,7 +1831,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "空気圧",
-    question: "空気圧の「ゲージ圧」と「絶対圧」の関係として正しいものはどれか。",
+    question:
+      "空気圧の「ゲージ圧」と「絶対圧」の関係として正しいものはどれか。",
     options: [
       "絶対圧＝ゲージ圧−大気圧",
       "絶対圧＝ゲージ圧＋大気圧（約0.1MPa）",
@@ -1706,7 +1849,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "空気圧",
-    question: "空気圧シリンダで負荷が途中で変動しても比較的安定した速度を得たい。一般に適しているのはどの速度制御方式か。",
+    question:
+      "空気圧シリンダで負荷が途中で変動しても比較的安定した速度を得たい。一般に適しているのはどの速度制御方式か。",
     options: [
       "供給・排気の両方を全開にして絞らない",
       "メータイン制御（供給側を絞る）",
@@ -1723,7 +1867,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "機械要素",
-    question: "ころがり軸受に適切な「予圧」を与える目的として正しいものはどれか。",
+    question:
+      "ころがり軸受に適切な「予圧」を与える目的として正しいものはどれか。",
     options: [
       "軸受を発熱させて温度を上げる",
       "軸受を意図的にゆるくして摩擦を完全になくす",
@@ -1740,8 +1885,14 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "機械要素",
-    question: "ころがり軸受の損傷で、はめあい面などで微小な相対すべりが繰り返されて生じる、赤褐色の摩耗粉を伴う現象を何というか。",
-    options: ["フレッチングコロージョン（フレッチング摩耗）", "フレーキング", "クリープ（はめ合い部のすべり回転）", "電食"],
+    question:
+      "ころがり軸受の損傷で、はめあい面などで微小な相対すべりが繰り返されて生じる、赤褐色の摩耗粉を伴う現象を何というか。",
+    options: [
+      "フレッチングコロージョン（フレッチング摩耗）",
+      "フレーキング",
+      "クリープ（はめ合い部のすべり回転）",
+      "電食",
+    ],
     answer: 0,
     explanation:
       "フレッチングは微小振幅の繰返しすべりで生じる摩耗で、赤褐色（鉄の場合）の微粉が出る。停止中の機械が外部振動を受け続ける場合などに軌道面に等間隔の傷（偽ブリネリング）を残すこともある。",
@@ -1752,7 +1903,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "機械要素",
-    question: "軸継手で連結した二軸の「芯出し（アライメント）」が不良のまま運転を続けると起こる不具合はどれか。",
+    question:
+      "軸継手で連結した二軸の「芯出し（アライメント）」が不良のまま運転を続けると起こる不具合はどれか。",
     options: [
       "回転トルクが自動的に増える",
       "軸受の早期損傷、カップリングの摩耗・破損、振動・異音・発熱の増大",
@@ -1769,7 +1921,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "潤滑",
-    question: "1台の設備に多種類の潤滑油が使われている状態を見直し、性能が同等以上の油にまとめる「油種統合（油種削減）」の主な狙いはどれか。",
+    question:
+      "1台の設備に多種類の潤滑油が使われている状態を見直し、性能が同等以上の油にまとめる「油種統合（油種削減）」の主な狙いはどれか。",
     options: [
       "油の劣化を完全になくすこと",
       "潤滑油の総使用量をゼロにすること",
@@ -1786,7 +1939,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "潤滑",
-    question: "グリースの「ちょう度（NLGI番号）」と「滴点」の説明として正しい組み合わせはどれか。",
+    question:
+      "グリースの「ちょう度（NLGI番号）」と「滴点」の説明として正しい組み合わせはどれか。",
     options: [
       "ちょう度はグリースの量、滴点は使用量の上限",
       "ちょう度は色の濃さ、滴点は引火点のこと",
@@ -1803,7 +1957,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "測定",
-    question: "精密測定における「アッベの原理」とは何か。",
+    question:
+      "精密測定における「アッベの原理」とは何か。",
     options: [
       "測定対象（被測定物）と基準目盛は測定方向の同一直線上に配置すべきである、という原理",
       "測定は必ず20℃で行うべきである、という原理",
@@ -1820,7 +1975,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "測定",
-    question: "測定器の表示値が、より上位の標準（基準器）に対してどれだけ正しいかを確認・調整する作業を何というか。",
+    question:
+      "測定器の表示値が、より上位の標準（基準器）に対してどれだけ正しいかを確認・調整する作業を何というか。",
     options: [
       "潤滑",
       "校正（キャリブレーション）",
@@ -1837,7 +1993,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "測定",
-    question: "同じ作業者が同じ部品を同じ測定器で繰り返し測ったときの測定値のばらつきの小ささを表すのはどれか。",
+    question:
+      "同じ作業者が同じ部品を同じ測定器で繰り返し測ったときの測定値のばらつきの小ささを表すのはどれか。",
     options: [
       "測定範囲",
       "感度",
@@ -1854,7 +2011,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "図面・材料",
-    question: "図面の寸法に「φ50 上の許容差＋0.025／下の許容差0」と記入されている穴の、許容される最大寸法と最小寸法はそれぞれいくらか。",
+    question:
+      "図面の寸法に「φ50 上の許容差＋0.025／下の許容差0」と記入されている穴の、許容される最大寸法と最小寸法はそれぞれいくらか。",
     options: [
       "最大49.975mm、最小50.025mm",
       "最大50.000mm、最小49.975mm",
@@ -1871,7 +2029,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "図面・材料",
-    question: "「穴基準はめあい」とはどのような考え方か。",
+    question:
+      "「穴基準はめあい」とはどのような考え方か。",
     options: [
       "穴の寸法公差を基準（一定）に固定し、軸の寸法を変えてすきまばめ・しまりばめなどを作る方式",
       "軸の寸法公差を基準に固定し、穴の寸法を変える方式",
@@ -1888,7 +2047,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "図面・材料",
-    question: "鋼の表面だけを硬くする「表面硬化処理」に含まれないものはどれか。",
+    question:
+      "鋼の表面だけを硬くする「表面硬化処理」に含まれないものはどれか。",
     options: [
       "浸炭焼入れ",
       "焼なまし（やきなまし）",
@@ -1905,7 +2065,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "図面・材料",
-    question: "ステンレス鋼などで、引張応力と特定の腐食環境（塩化物など）が重なって、ほとんど減肉せずに割れが進む現象を何というか。",
+    question:
+      "ステンレス鋼などで、引張応力と特定の腐食環境（塩化物など）が重なって、ほとんど減肉せずに割れが進む現象を何というか。",
     options: [
       "クリープ破断",
       "ピッチング（孔食）だけ",
@@ -1922,7 +2083,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "図面・材料",
-    question: "異なる種類の金属が電解質（水分など）を介して接触したとき、片方が優先的に腐食する現象を何というか。",
+    question:
+      "異なる種類の金属が電解質（水分など）を介して接触したとき、片方が優先的に腐食する現象を何というか。",
     options: [
       "黒皮（スケール）の生成",
       "焼戻しぜい性",
@@ -1939,8 +2101,14 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "保全方式",
-    question: "設備故障の原因を体系的に解析する手法のうち、「望ましくない事象（トップ事象）」を頂点に置き、その原因をAND/ORでつないで樹形図に展開し、要因の論理関係を明らかにする手法はどれか。",
-    options: ["FTA（故障の木解析）", "FMEA（故障モード影響解析）", "PM分析", "なぜなぜ分析（5Why）だけ"],
+    question:
+      "設備故障の原因を体系的に解析する手法のうち、「望ましくない事象（トップ事象）」を頂点に置き、その原因をAND/ORでつないで樹形図に展開し、要因の論理関係を明らかにする手法はどれか。",
+    options: [
+      "FTA（故障の木解析）",
+      "FMEA（故障モード影響解析）",
+      "PM分析",
+      "なぜなぜ分析（5Why）だけ",
+    ],
     answer: 0,
     explanation:
       "FTA（Fault Tree Analysis）はトップ事象から下位要因へ論理ゲート（AND/OR）で展開するトップダウン手法。FMEAは構成部品の故障モードを洗い出し、その影響・発生度・検出度を評価するボトムアップ手法で、両者は補完的に使われる。",
@@ -1951,7 +2119,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "保全方式",
-    question: "保全費を「直接保全費」と「機会損失（間接的損失）」に分けたとき、機会損失に当たるものはどれか。",
+    question:
+      "保全費を「直接保全費」と「機会損失（間接的損失）」に分けたとき、機会損失に当たるものはどれか。",
     options: [
       "交換部品の購入費",
       "設備故障で生産が止まったことによる減産・納期遅延・品質不良などの損失",
@@ -1968,7 +2137,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "保全方式",
-    question: "「予備品（保全用ストック品）」の在庫管理で、過剰在庫と欠品の両方を避けるために考慮すべき要素として適切でないものはどれか。",
+    question:
+      "「予備品（保全用ストック品）」の在庫管理で、過剰在庫と欠品の両方を避けるために考慮すべき要素として適切でないものはどれか。",
     options: [
       "欠品時の生産停止損失の大きさ（重要度）",
       "故障頻度・寿命と入手リードタイム",
@@ -1985,7 +2155,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "信頼性",
-    question: "信頼性設計の「ディレーティング（デレーティング）」とは何か。",
+    question:
+      "信頼性設計の「ディレーティング（デレーティング）」とは何か。",
     options: [
       "誤操作を物理的にできなくする設計",
       "故障時に安全側へ移行させる設計",
@@ -2002,7 +2173,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "信頼性",
-    question: "「フェールセーフ」設計の例として最も適切なものはどれか。",
+    question:
+      "「フェールセーフ」設計の例として最も適切なものはどれか。",
     options: [
       "信号機が故障したら全方向を赤（停止）にする、ブレーキは空気圧が抜けたら効く（ばね作動）",
       "操作パネルにカバーを付けて誤操作できないようにする",
@@ -2019,7 +2191,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "設備診断",
-    question: "電気設備の絶縁劣化を傾向管理するとき、絶縁抵抗計（メガー）の測定値の扱い方として正しいものはどれか。",
+    question:
+      "電気設備の絶縁劣化を傾向管理するとき、絶縁抵抗計（メガー）の測定値の扱い方として正しいものはどれか。",
     options: [
       "1回でも規定値以上なら以後の測定は不要",
       "同一機器・同一条件で定期測定し、値が低下傾向を示したら劣化進行と判断する（温度・湿度の影響も考慮）",
@@ -2036,7 +2209,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "設備診断",
-    question: "圧縮空気配管や蒸気トラップなどの「漏れ」を、聞こえない高い周波数の音で検出する診断機器はどれか。",
+    question:
+      "圧縮空気配管や蒸気トラップなどの「漏れ」を、聞こえない高い周波数の音で検出する診断機器はどれか。",
     options: [
       "回転計（タコメータ）",
       "ストロボスコープ",
@@ -2053,7 +2227,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "設備診断",
-    question: "回転体の振動を測るとき、検出する周波数帯域によって変位・速度・加速度を使い分ける。一般に高周波域（転がり軸受の傷など）の検出に適しているのはどれか。",
+    question:
+      "回転体の振動を測るとき、検出する周波数帯域によって変位・速度・加速度を使い分ける。一般に高周波域（転がり軸受の傷など）の検出に適しているのはどれか。",
     options: [
       "温度だけ",
       "変位だけ",
@@ -2070,7 +2245,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "電気",
-    question: "電動機を含む工場の電力系統で「力率」を改善する（1に近づける）と得られる効果はどれか。",
+    question:
+      "電動機を含む工場の電力系統で「力率」を改善する（1に近づける）と得られる効果はどれか。",
     options: [
       "同じ仕事をするのに必要な電流が減り、配線・変圧器の負担や損失が小さくなる",
       "電動機の出力（仕事量）が自動的に2倍になる",
@@ -2087,7 +2263,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "電気",
-    question: "近接スイッチ・光電スイッチ・リミットスイッチの一般的な使い分けとして正しいものはどれか。",
+    question:
+      "近接スイッチ・光電スイッチ・リミットスイッチの一般的な使い分けとして正しいものはどれか。",
     options: [
       "3つとも必ず物体に接触して検出する",
       "近接スイッチは金属など対象の接近を非接触検出、光電スイッチは光の遮断・反射で検出、リミットスイッチは機械的に接触して検出",
@@ -2104,7 +2281,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "電気",
-    question: "リレーシーケンスにおける「自己保持回路」の動作説明として正しいものはどれか。",
+    question:
+      "リレーシーケンスにおける「自己保持回路」の動作説明として正しいものはどれか。",
     options: [
       "停止ボタンを押すとリレーが励磁され、起動ボタンで停止する",
       "起動ボタンを押している間だけリレーが動作し、離すと必ず停止する",
@@ -2121,7 +2299,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "電気",
-    question: "三相誘導電動機の回転方向を逆にしたいとき、最も簡単で確実な方法はどれか。",
+    question:
+      "三相誘導電動機の回転方向を逆にしたいとき、最も簡単で確実な方法はどれか。",
     options: [
       "電源電圧を2倍にする",
       "三相3本すべてを入れ換える",
@@ -2138,7 +2317,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "保全方式",
-    question: "設備の重要度（生産・品質・安全・コストへの影響）に応じて保全方式を割り当てる場合、最も合理的な組み合わせはどれか。",
+    question:
+      "設備の重要度（生産・品質・安全・コストへの影響）に応じて保全方式を割り当てる場合、最も合理的な組み合わせはどれか。",
     options: [
       "停止が重大な影響を及ぼし兆候が検出できる設備→予知保全（CBM）、影響が中程度で寿命が読める部品→時間基準保全（TBM）、影響が小さく安価にすぐ直せる部品→事後保全（BM）",
       "すべての設備を一律に事後保全（BM）にする",
@@ -2155,7 +2335,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "保全方式",
-    question: "設備を分解して点検・部品交換・調整を行い、初期性能近くまで回復させる大掛かりな整備を何というか。",
+    question:
+      "設備を分解して点検・部品交換・調整を行い、初期性能近くまで回復させる大掛かりな整備を何というか。",
     options: [
       "日常点検",
       "オーバーホール（分解整備）",
@@ -2172,7 +2353,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "信頼性",
-    question: "ある設備で「初期故障期」にあたる時期に故障が多発している。この時期の故障を減らすために有効な対策はどれか。",
+    question:
+      "ある設備で「初期故障期」にあたる時期に故障が多発している。この時期の故障を減らすために有効な対策はどれか。",
     options: [
       "何もせず偶発故障期に入るのを待つ",
       "摩耗部品をいっせいに新品へ交換する",
@@ -2189,7 +2371,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "信頼性",
-    question: "ある設備で「摩耗故障期」に入って故障率が上昇している。最も適した対策はどれか。",
+    question:
+      "ある設備で「摩耗故障期」に入って故障率が上昇している。最も適した対策はどれか。",
     options: [
       "そのまま使い続け故障率が下がるのを待つ",
       "慣らし運転をやり直す",
@@ -2206,7 +2389,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "信頼性",
-    question: "あるシステムは要素A（信頼度0.9）と要素B（信頼度0.9）が直列で、さらにそれと同じ構成（A'-B'直列）がもう1系統あって2系統が並列になっている。各直列系の信頼度はいくらで、システム全体はおよそいくらか。",
+    question:
+      "あるシステムは要素A（信頼度0.9）と要素B（信頼度0.9）が直列で、さらにそれと同じ構成（A'-B'直列）がもう1系統あって2系統が並列になっている。各直列系の信頼度はいくらで、システム全体はおよそいくらか。",
     options: [
       "各系0.81、全体は1−(1−0.81)²≒0.964",
       "各系0.81、全体も0.81",
@@ -2223,7 +2407,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "油圧",
-    question: "油圧装置の作動油温度が上がりすぎると起こる不具合として、当てはまらないものはどれか。",
+    question:
+      "油圧装置の作動油温度が上がりすぎると起こる不具合として、当てはまらないものはどれか。",
     options: [
       "粘度低下による内部漏れ増大・効率低下・潤滑性低下",
       "作動油の粘度が上がりすぎて流れにくくなり、ポンプ吸込み不良を起こす",
@@ -2240,7 +2425,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "油圧",
-    question: "油圧フィルタの設置位置「サクション（吸込み）・ライン（圧力）・リターン（戻り）」の説明として正しいものはどれか。",
+    question:
+      "油圧フィルタの設置位置「サクション（吸込み）・ライン（圧力）・リターン（戻り）」の説明として正しいものはどれか。",
     options: [
       "サクションはタンクの外、ラインはタンクの底、リターンは大気開放口に付ける",
       "3つともポンプ吐出側に付ける",
@@ -2257,7 +2443,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "空気圧",
-    question: "圧縮空気を「乾燥」させるエアドライヤがないと、配管末端で起こりやすいトラブルはどれか。",
+    question:
+      "圧縮空気を「乾燥」させるエアドライヤがないと、配管末端で起こりやすいトラブルはどれか。",
     options: [
       "空気の圧力が自然に2倍になる",
       "圧縮空気の温度が下がらなくなる",
@@ -2274,8 +2461,14 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "機械要素",
-    question: "管路を急に閉じたとき、流れていた流体の運動エネルギーで管内圧力が急上昇し、衝撃と騒音を生じる現象を何というか。",
-    options: ["ウォータハンマ（水撃作用）", "キャビテーション", "サージング", "バックラッシ"],
+    question:
+      "管路を急に閉じたとき、流れていた流体の運動エネルギーで管内圧力が急上昇し、衝撃と騒音を生じる現象を何というか。",
+    options: [
+      "ウォータハンマ（水撃作用）",
+      "キャビテーション",
+      "サージング",
+      "バックラッシ",
+    ],
     answer: 0,
     explanation:
       "ウォータハンマ（水撃）はバルブの急閉やポンプの急停止で生じる圧力波で、配管・継手・機器を損傷させたり大きな打撃音を出す。緩閉弁の使用、エアチャンバ・サージタンクの設置、操作の緩徐化などで防止する。",
@@ -2286,7 +2479,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "機械要素",
-    question: "ポンプ軸の貫通部などに用いる「メカニカルシール」と「グランドパッキン」の比較として正しいものはどれか。",
+    question:
+      "ポンプ軸の貫通部などに用いる「メカニカルシール」と「グランドパッキン」の比較として正しいものはどれか。",
     options: [
       "メカニカルシールは多量に漏れて当たり前で、グランドパッキンは完全密封",
       "メカニカルシールは摺動環どうしの平面接触で漏れがごく少なく増し締め不要、グランドパッキンは詰め物を押し込む方式で適度な微少漏れを許容し定期的な締め直しが要る",
@@ -2303,7 +2497,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "潤滑",
-    question: "稼働中の減速機から採取した潤滑油の「鉄分濃度」を定期的に分析した結果、ある時期から急に増加した。最も考えられる状況はどれか。",
+    question:
+      "稼働中の減速機から採取した潤滑油の「鉄分濃度」を定期的に分析した結果、ある時期から急に増加した。最も考えられる状況はどれか。",
     options: [
       "潤滑油の温度が下がりすぎている",
       "潤滑油がまだ新品同様で問題がない",
@@ -2320,7 +2515,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "測定",
-    question: "回転体の見かけの動きを止めて観察し、回転数の確認やベルト・歯車の状態点検に使う器具はどれか。",
+    question:
+      "回転体の見かけの動きを止めて観察し、回転数の確認やベルト・歯車の状態点検に使う器具はどれか。",
     options: [
       "スコヤ",
       "限界ゲージ",
@@ -2337,7 +2533,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "図面・材料",
-    question: "表面性状（表面粗さ）の指標「Ra」とは何か。",
+    question:
+      "表面性状（表面粗さ）の指標「Ra」とは何か。",
     options: [
       "粗さ曲線の平均線からの偏差の絶対値の平均（算術平均粗さ）で、値が小さいほど滑らかな面",
       "最も深い谷から最も高い山までの距離だけのこと",
@@ -2354,7 +2551,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "図面・材料",
-    question: "材料記号「FC250」が表すものはどれか。",
+    question:
+      "材料記号「FC250」が表すものはどれか。",
     options: [
       "ステンレス鋼の一種",
       "ねずみ鋳鉄（片状黒鉛鋳鉄）で、引張強さの目安が約250N/mm²",
@@ -2371,7 +2569,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "安全",
-    question: "電動機を据え付けた設備で、コンデンサを含む回路や慣性で回り続ける部分がある場合、修理前の安全確認として追加で必要なことはどれか。",
+    question:
+      "電動機を据え付けた設備で、コンデンサを含む回路や慣性で回り続ける部分がある場合、修理前の安全確認として追加で必要なことはどれか。",
     options: [
       "回転部は危ないので動いているうちに分解を始める",
       "電源を切ったらすぐ素手で端子に触れてよい",
@@ -2388,7 +2587,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "電気",
-    question: "あるヒータ（純抵抗負荷）に100Vを加えると20Aの電流が流れた。このヒータの抵抗と消費電力の組み合わせとして正しいものはどれか。",
+    question:
+      "あるヒータ（純抵抗負荷）に100Vを加えると20Aの電流が流れた。このヒータの抵抗と消費電力の組み合わせとして正しいものはどれか。",
     options: [
       "抵抗0.2Ω、消費電力5000W",
       "抵抗5Ω、消費電力200W",
@@ -2405,7 +2605,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "保全方式",
-    question: "新規設備の計画段階で過去設備の故障・不具合情報を収集し、信頼性・保全性・操作性・安全性の高い設備を作るために設計へ反映する活動を何というか（その情報を何と呼ぶか）。",
+    question:
+      "新規設備の計画段階で過去設備の故障・不具合情報を収集し、信頼性・保全性・操作性・安全性の高い設備を作るために設計へ反映する活動を何というか（その情報を何と呼ぶか）。",
     options: [
       "MP設計／MP情報のフィードバック（保全予防）",
       "QC工程表の作成",
@@ -2422,7 +2623,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "設備診断",
-    question: "サーモグラフィ（赤外線熱画像）で電気盤を点検したら、ある端子部だけが周囲より明らかに高温だった。最も考えられる原因はどれか。",
+    question:
+      "サーモグラフィ（赤外線熱画像）で電気盤を点検したら、ある端子部だけが周囲より明らかに高温だった。最も考えられる原因はどれか。",
     options: [
       "その端子だけ電流がまったく流れていない",
       "端子の締付け不足や接触不良による接触抵抗の増大（発熱）",
@@ -2439,7 +2641,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "信頼性",
-    question: "次のうち「保全性（メンテナビリティ）」を高める設計上の配慮として最も適切なものはどれか。",
+    question:
+      "次のうち「保全性（メンテナビリティ）」を高める設計上の配慮として最も適切なものはどれか。",
     options: [
       "潤滑箇所を機械の奥に隠してアクセスしにくくする",
       "部品をできるだけ溶接して分解できないようにする",
@@ -2456,7 +2659,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "信頼性",
-    question: "設備の総運転時間10000時間の間に、修復に要した時間の合計が200時間、故障が10回あった。MTTRと、参考までのMTBF（動作可能時間＝総運転時間−修復時間とする）はそれぞれおよそいくらか。",
+    question:
+      "設備の総運転時間10000時間の間に、修復に要した時間の合計が200時間、故障が10回あった。MTTRと、参考までのMTBF（動作可能時間＝総運転時間−修復時間とする）はそれぞれおよそいくらか。",
     options: [
       "MTTR＝2時間、MTBF＝100時間",
       "MTTR＝200時間、MTBF＝1000時間",
@@ -2473,7 +2677,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "電気",
-    question: "リレーシーケンスで、押しボタン2個を「並列」に接続し、どちらを押しても運転が始まるようにした。これは論理的に何回路か。",
+    question:
+      "リレーシーケンスで、押しボタン2個を「並列」に接続し、どちらを押しても運転が始まるようにした。これは論理的に何回路か。",
     options: [
       "OR回路（いずれかの入力がONなら出力ON）",
       "AND回路（両方の入力がONのときだけ出力ON）",
@@ -2490,7 +2695,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "保全方式",
-    question: "「日常点検（自主点検）」と「定期点検」の役割分担として正しいものはどれか。",
+    question:
+      "「日常点検（自主点検）」と「定期点検」の役割分担として正しいものはどれか。",
     options: [
       "日常点検は年1回、定期点検は毎日行う",
       "日常点検は運転員が始業前・運転中に五感・簡易計測で異常の早期発見、定期点検は保全部門が一定周期で計測器を使い詳細に点検・整備する",
@@ -2507,7 +2713,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "信頼性",
-    question: "「冗長化（リダンダンシー）」によって信頼度を高める例として正しいものはどれか。また並列冗長で信頼度が上がる理由はどれか。",
+    question:
+      "「冗長化（リダンダンシー）」によって信頼度を高める例として正しいものはどれか。また並列冗長で信頼度が上がる理由はどれか。",
     options: [
       "誤操作をできなくする。操作ミスがゼロになるため",
       "部品を1個に減らして故障する箇所自体を減らす。直列要素が増えるため信頼度が上がる",
@@ -2524,7 +2731,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "設備診断",
-    question: "簡易振動診断で、軸受箱の振動速度実効値（mm/s）を測って良否を判定する。一般的な評価の考え方として適切なものはどれか。",
+    question:
+      "簡易振動診断で、軸受箱の振動速度実効値（mm/s）を測って良否を判定する。一般的な評価の考え方として適切なものはどれか。",
     options: [
       "毎回まったく別の測定点・別の機械と比べてよい",
       "1回測って数値が出れば、それだけで絶対的に良否が決まる",
@@ -2541,7 +2749,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 3,
     topic: "機械要素",
-    question: "減速機（歯車箱）の運転中、これまで聞かれなかった規則的な打音と振動が出始めた。点検でまず確認すべき項目として最も適切でないものはどれか。",
+    question:
+      "減速機（歯車箱）の運転中、これまで聞かれなかった規則的な打音と振動が出始めた。点検でまず確認すべき項目として最も適切でないものはどれか。",
     options: [
       "歯車箱の塗装の色あせ具合",
       "歯当たり・バックラッシ・歯面の損傷（ピッチング・欠け）",
@@ -2558,7 +2767,8 @@ export const BANK_SETSUBI_HOZEN: BankQuestion[] = [
     category: "setsubi-hozen",
     difficulty: 2,
     topic: "電気",
-    question: "三相誘導電動機の運転電流をクランプメータで測ったところ、定格電流を大きく超えていた。考えられる原因として適切でないものはどれか。",
+    question:
+      "三相誘導電動機の運転電流をクランプメータで測ったところ、定格電流を大きく超えていた。考えられる原因として適切でないものはどれか。",
     options: [
       "機械側の過負荷（ベルトの締めすぎ、軸受の固着、被駆動機の異常など）",
       "電動機の絶縁抵抗（メガー値）が規定どおり十分高いこと",
