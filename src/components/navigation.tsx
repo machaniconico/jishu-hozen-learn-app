@@ -7,13 +7,12 @@ import { ThemeToggle } from "@/components/theme-toggle";
 
 const TOP_ITEMS = [
   { href: "/", label: "ホーム" },
+  { href: "/exam", label: "本番モード" },
   { href: "/dashboard", label: "進捗" },
 ];
 
 const STUDY_ITEMS = [
-  { href: "/quiz", label: "クイズ" },
   { href: "/flashcards", label: "フラッシュカード" },
-  { href: "/past-exam", label: "模擬試験" },
   { href: "/glossary", label: "用語集" },
 ];
 
@@ -38,6 +37,17 @@ const NAV_GROUPS = [
       { href: "/learn/1/jishu-hozen", label: "自主保全活動" },
       { href: "/learn/1/kaizen-kaiseki", label: "改善・解析" },
       { href: "/learn/1/setsubi-hozen", label: "設備保全の基礎" },
+    ],
+  },
+  {
+    label: "演習",
+    color: "amber",
+    items: [
+      { href: "/exam", label: "本番モード（模試）" },
+      { href: "/calc-drill", label: "計算ドリル" },
+      { href: "/quiz", label: "ランダムクイズ" },
+      { href: "/review", label: "復習リスト" },
+      { href: "/past-exam", label: "模擬試験（固定セット）" },
     ],
   },
 ];

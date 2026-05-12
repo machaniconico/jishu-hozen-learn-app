@@ -2,24 +2,40 @@ import Link from "next/link";
 
 const features = [
   {
+    icon: "📝",
+    title: "本番モード（模試）",
+    description: "毎回ランダムで問題が入れ替わる本番形式の模試。制限時間・科目別スコア・足切り判定つきで、合格力を実戦的に鍛えます。",
+    href: "/exam",
+  },
+  {
+    icon: "🧮",
+    title: "計算ドリル",
+    description: "OEE・MTBF/MTTR・タクトタイム・オームの法則など、数値が毎回変わる計算問題を無限に演習。解き方も毎問表示。",
+    href: "/calc-drill",
+  },
+  {
     icon: "📖",
     title: "テキスト学習",
     description: "5科目を体系的に学べる詳細な解説ページ。2級・1級それぞれのレベルで段階的に理解を深められます。",
+    href: "/learn/2/seisan-kihon",
   },
   {
-    icon: "✅",
-    title: "確認クイズ",
-    description: "各レッスンに4択クイズ付き。解説を読みながら理解度をその場で確認できます。",
+    icon: "🔁",
+    title: "復習リスト",
+    description: "間違えた問題が自動でたまり、正解を重ねると外れる。弱点だけを集中的につぶせます。",
+    href: "/review",
   },
   {
     icon: "🃏",
     title: "フラッシュカード",
     description: "重要用語を効率的に暗記。シャッフル機能で繰り返し学習し、わかった・復習が必要をマーキング。",
+    href: "/flashcards",
   },
   {
-    icon: "📝",
-    title: "模擬試験",
-    description: "本番形式の問題で実力チェック。間違えた問題の解説で弱点を補強できます。",
+    icon: "📊",
+    title: "弱点ダッシュボード",
+    description: "科目別の正答率・模試スコアの推移・受験日カウントダウン・連続学習日数を一目で確認。",
+    href: "/dashboard",
   },
 ];
 
@@ -51,23 +67,23 @@ export default function HomePage() {
           <p className="text-base sm:text-lg text-gray-400 max-w-2xl mx-auto mb-8 leading-relaxed">
             JIPM主催「自主保全士検定」1級・2級の試験対策を
             <br className="hidden sm:block" />
-            テキスト・クイズ・フラッシュカード・模擬試験で完全網羅
+            テキスト・本番形式の模試・計算ドリル・弱点復習で完全網羅
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
-              href="/learn/2/seisan-kihon"
+              href="/exam"
               className="inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-gray-950 font-semibold px-8 py-3 rounded-lg transition-colors"
             >
-              2級から学習を始める
+              本番モード（模試）を受ける
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </Link>
             <Link
-              href="/learn/1/seisan-kihon"
+              href="/learn/2/seisan-kihon"
               className="inline-flex items-center justify-center gap-2 bg-gray-800 hover:bg-gray-700 text-gray-100 font-semibold px-8 py-3 rounded-lg transition-colors border border-gray-700"
             >
-              1級コースを見る
+              2級コースから学ぶ
             </Link>
           </div>
         </div>
@@ -203,19 +219,20 @@ export default function HomePage() {
       <section className="py-12 px-4 sm:px-6 lg:px-8 border-t border-gray-900">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-gray-100 mb-3">4つの学習モード</h2>
-            <p className="text-gray-400">あなたの学習スタイルに合わせて選べる</p>
+            <h2 className="text-3xl font-bold text-gray-100 mb-3">合格を狙う6つのモード</h2>
+            <p className="text-gray-400">「これで受かれば本番でも受かる」を目指した実戦的な構成</p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {features.map((f) => (
-              <div
+              <Link
                 key={f.title}
-                className="p-5 rounded-xl bg-gray-900 border border-gray-800 hover:border-amber-500/40 transition-colors"
+                href={f.href}
+                className="block p-5 rounded-xl bg-gray-900 border border-gray-800 hover:border-amber-500/40 transition-colors"
               >
                 <div className="text-3xl mb-3">{f.icon}</div>
                 <h3 className="text-base font-bold text-amber-400 mb-2">{f.title}</h3>
                 <p className="text-xs text-gray-400 leading-relaxed">{f.description}</p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
