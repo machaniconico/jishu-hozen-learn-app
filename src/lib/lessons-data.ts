@@ -1,4 +1,6 @@
 import type { QuizQuestion } from "@/components/quiz";
+import { EXTRA_LESSONS_G2 } from "@/lib/lessons-extra-g2";
+import { EXTRA_LESSONS_G1 } from "@/lib/lessons-extra-g1";
 
 export type Grade = "2" | "1";
 export type CategoryId =
@@ -1590,6 +1592,7 @@ const G1_SETSUBI: Lesson[] = [
 export const ALL_LESSONS: Lesson[] = [
   ...G2_SEISAN, ...G2_LOSS, ...G2_JISHU, ...G2_KAIZEN, ...G2_SETSUBI,
   ...G1_SEISAN, ...G1_LOSS, ...G1_JISHU, ...G1_KAIZEN, ...G1_SETSUBI,
+  ...EXTRA_LESSONS_G2, ...EXTRA_LESSONS_G1,
 ];
 
 export function getLessons(grade: Grade, category: CategoryId): Lesson[] {
