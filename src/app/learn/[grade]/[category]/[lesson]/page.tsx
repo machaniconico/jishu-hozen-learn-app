@@ -14,6 +14,7 @@ import {
   type Grade,
   type CategoryId,
 } from "@/lib/lessons-data";
+import { getLessonSyllabusHint } from "@/lib/exam-syllabus";
 
 export function generateStaticParams() {
   return getAllStaticParams();
@@ -60,6 +61,13 @@ export default async function LessonPage({ params }: PageProps) {
           {lesson.title}
         </h1>
         <p className="text-gray-400 leading-relaxed">{lesson.description}</p>
+        {getLessonSyllabusHint(lesson.id) && (
+          <p className="mt-3 inline-flex items-center gap-1.5 text-xs text-amber-300 bg-amber-500/10 border border-amber-500/20 rounded-full px-3 py-1">
+            <span className="text-amber-500/70">出題範囲</span>
+            <span className="text-gray-300">{getLessonSyllabusHint(lesson.id)}</span>
+            <Link href="/syllabus" className="ml-1 text-amber-400/80 hover:text-amber-300 underline">詳細</Link>
+          </p>
+        )}
       </div>
 
       <LessonRenderer sections={lesson.sections} />

@@ -12,6 +12,7 @@ import {
   type Grade,
   type CategoryId,
 } from "@/lib/lessons-data";
+import { getSyllabusForCategory } from "@/lib/exam-syllabus";
 
 export function generateStaticParams() {
   return getAllCategoryParams();
@@ -33,6 +34,7 @@ export default async function CategoryPage({ params }: PageProps) {
 
   const storageId = getCategoryStorageId(grade, category);
   const otherGrade: Grade = grade === "2" ? "1" : "2";
+  const syllabus = getSyllabusForCategory(category);
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-10">
@@ -60,6 +62,26 @@ export default async function CategoryPage({ params }: PageProps) {
           {categoryInfo.description}
         </p>
       </div>
+
+      {syllabus && (
+        <div className="mb-8 rounded-2xl border border-amber-500/25 bg-amber-500/[0.06] p-5">
+          <div className="flex items-center justify-between gap-3 flex-wrap mb-2">
+            <p className="text-sm font-semibold text-amber-400">
+              JIPM 出題範囲: <span className="text-gray-200">{syllabus.officialArea}</span>
+            </p>
+            <Link href="/syllabus" className="text-xs text-amber-400 hover:text-amber-300 shrink-0">出題範囲の全体を見る →</Link>
+          </div>
+          <p className="text-xs text-gray-400 leading-relaxed mb-3">{syllabus.note}</p>
+          <p className="text-[11px] text-gray-500 mb-1.5">この科目の主な出題項目</p>
+          <ul className="grid sm:grid-cols-2 gap-x-4 gap-y-1">
+            {syllabus.subItems.map((it, i) => (
+              <li key={i} className="text-xs text-gray-300 flex items-start gap-1.5">
+                <span className="text-amber-500/60 mt-0.5">▸</span>{it}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
 
       <div className="mb-8">
         <ProgressBar

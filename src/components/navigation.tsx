@@ -15,6 +15,7 @@ const STUDY_ITEMS = [
   { href: "/flashcards", label: "フラッシュカード" },
   { href: "/glossary", label: "用語集" },
   { href: "/cheatsheet", label: "直前まとめ" },
+  { href: "/syllabus", label: "出題範囲" },
 ];
 
 const NAV_GROUPS = [
