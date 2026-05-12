@@ -14,6 +14,7 @@ const TOP_ITEMS = [
 const STUDY_ITEMS = [
   { href: "/flashcards", label: "フラッシュカード" },
   { href: "/glossary", label: "用語集" },
+  { href: "/cheatsheet", label: "直前まとめ" },
 ];
 
 const NAV_GROUPS = [
@@ -43,7 +44,8 @@ const NAV_GROUPS = [
     label: "演習",
     color: "amber",
     items: [
-      { href: "/exam", label: "本番モード（模試）" },
+      { href: "/exam", label: "本番モード（学科模試）" },
+      { href: "/practical", label: "実技（記述）対策" },
       { href: "/calc-drill", label: "計算ドリル" },
       { href: "/quiz", label: "ランダムクイズ" },
       { href: "/review", label: "復習リスト" },
