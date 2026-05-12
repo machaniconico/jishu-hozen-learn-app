@@ -1,0 +1,17 @@
+{
+  "name": "自主保全士 学習アプリ",
+  "short_name": "自主保全士",
+  "description": "JIPM 自主保全士検定 1級・2級の試験対策（テキスト・本番モード模試・計算ドリル・実技対策）",
+  "lang": "ja",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a0a0a",
+  "theme_color": "#f59e0b",
+  "categories": ["education"],
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}
