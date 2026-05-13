@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ExamRunner } from "@/components/exam-runner";
 import { EXAM_SETS, type ExamSet } from "@/lib/past-exam-data";
 import { savePastExamScore } from "@/lib/progress";
+import { shuffle } from "@/lib/question-bank";
 import type { BankQuestion } from "@/lib/exam-types";
 
 /** perQ seconds; null = untimed */
@@ -35,7 +36,7 @@ export default function PastExamPage() {
 
   const startRun = (set: ExamSet) => {
     const pace = PACE.find((p) => p.id === paceId)!;
-    const questions = toBankQuestions(set);
+    const questions = shuffle(toBankQuestions(set));
     const limit = pace.perQ != null ? pace.perQ * questions.length : null;
     setRun({ set, questions, limit });
     window.scrollTo(0, 0);
@@ -45,7 +46,7 @@ export default function PastExamPage() {
     const pace = PACE.find((p) => p.id === paceId)!;
     return (
       <ExamRunner
-        key={`${run.set.id}-${pace.id}-${run.questions.length}`}
+        key={run.questions.map((q) => q.id).join(",") + pace.id}
         questions={run.questions}
         grade={run.set.grade}
         timeLimitSec={run.limit}
