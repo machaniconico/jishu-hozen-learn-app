@@ -7,15 +7,22 @@ import { buildMockExam, getBankStats } from "@/lib/question-bank";
 import type { BankQuestion } from "@/lib/exam-types";
 import type { Grade } from "@/lib/lessons-data";
 
-const COUNTS = [20, 30, 50] as const;
+const COUNTS = [20, 30, 50, 100] as const;
 
-/** seconds per question; null = untimed */
-const PACE: { id: string; label: string; perQ: number | null; note: string }[] = [
+/** perQ: seconds per question (null = untimed). fixedSec: a fixed total limit, overrides perQ. */
+const PACE: { id: string; label: string; perQ: number | null; fixedSec?: number; note: string }[] = [
   { id: "none", label: "制限なし", perQ: null, note: "じっくり解く" },
   { id: "easy", label: "ゆったり", perQ: 100, note: "100秒/問" },
   { id: "std", label: "標準", perQ: 75, note: "75秒/問" },
   { id: "real", label: "本番ペース", perQ: 55, note: "55秒/問" },
+  { id: "exam120", label: "本番想定", perQ: null, fixedSec: 7200, note: "120分固定（100問推奨）" },
 ];
+
+function paceLimitSec(paceId: string, count: number): number | null {
+  const p = PACE.find((x) => x.id === paceId)!;
+  if (p.fixedSec != null) return p.fixedSec;
+  return p.perQ != null ? p.perQ * count : null;
+}
 
 export default function ExamPage() {
   const [grade, setGrade] = useState<Grade>("2");
@@ -26,9 +33,8 @@ export default function ExamPage() {
   const stats = getBankStats();
 
   const start = () => {
-    const pace = PACE.find((p) => p.id === paceId)!;
     const questions = buildMockExam(grade, count);
-    const limit = pace.perQ != null ? pace.perQ * questions.length : null;
+    const limit = paceLimitSec(paceId, questions.length);
     setRun({ questions, limit });
     window.scrollTo(0, 0);
   };
@@ -52,8 +58,8 @@ export default function ExamPage() {
   }
 
   const poolSize = stats.byGrade[grade];
-  const pace = PACE.find((p) => p.id === paceId)!;
-  const estMin = pace.perQ != null ? Math.round((pace.perQ * count) / 60) : null;
+  const limitSec = paceLimitSec(paceId, count);
+  const estMin = limitSec != null ? Math.round(limitSec / 60) : null;
 
   return (
     <div className="max-w-2xl mx-auto px-4 py-10">
@@ -91,7 +97,7 @@ export default function ExamPage() {
         {/* count */}
         <div>
           <h3 className="text-sm font-semibold text-gray-300 mb-3">出題数</h3>
-          <div className="grid grid-cols-3 gap-2">
+          <div className="grid grid-cols-4 gap-2">
             {COUNTS.map((n) => (
               <button
                 key={n}
@@ -106,13 +112,13 @@ export default function ExamPage() {
               </button>
             ))}
           </div>
-          <p className="text-xs text-gray-600 mt-2">5科目からほぼ均等に出題されます。</p>
+          <p className="text-xs text-gray-600 mt-2">5科目からほぼ均等に出題。本番の学科は約100問・120分が目安です（「100問」＋ペース「本番想定」で本番シミュレーション）。</p>
         </div>
 
         {/* pace */}
         <div>
           <h3 className="text-sm font-semibold text-gray-300 mb-3">ペース（制限時間）</h3>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+          <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
             {PACE.map((p) => (
               <button
                 key={p.id}

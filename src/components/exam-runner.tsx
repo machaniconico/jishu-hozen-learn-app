@@ -28,6 +28,8 @@ interface ExamRunnerProps {
   onExit?: () => void;
   /** called when the user wants a fresh randomized run */
   onRestart?: () => void;
+  /** called once when the exam is scored, with the full result */
+  onFinish?: (result: ExamResult) => void;
 }
 
 const CAT_NAME: Record<string, string> = Object.fromEntries(
@@ -50,6 +52,7 @@ export function ExamRunner({
   showSubjectBreakdown = true,
   onExit,
   onRestart,
+  onFinish,
 }: ExamRunnerProps) {
   const total = questions.length;
   const [answers, setAnswers] = useState<(number | null)[]>(() => Array(total).fill(null));
@@ -108,11 +111,12 @@ export function ExamRunner({
     };
     if (recordResult) saveExamResult(result);
     logAnswers(questions.map((q, i) => ({ id: q.id, correct: answers[i] === q.answer })));
+    onFinish?.(result);
     setResult_(result);
     setFinished(true);
     setElapsed(result.durationSec);
     requestAnimationFrame(() => topRef.current?.scrollIntoView({ behavior: "auto" }));
-  }, [answers, questions, total, grade, examId, recordResult, showSubjectBreakdown, timeLimitSec]);
+  }, [answers, questions, total, grade, examId, recordResult, showSubjectBreakdown, timeLimitSec, onFinish]);
 
   // timer
   useEffect(() => {
